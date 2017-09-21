@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.example.bedmak.tictactoe.MainActivity">
+
+    <Button
+        android:id="@+id/buttonNewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_game"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"/>
+
+    <LinearLayout
+        android:id="@+id/centerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+
+        <TextView
+            android:id="@+id/cell3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/cell4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/cell5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/border"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/centerLayout">
+
+
+        <TextView
+            android:id="@+id/cell0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/cell1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/cell2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/border"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/centerLayout">
+
+
+        <TextView
+            android:id="@+id/cell6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/cell7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/cell8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/border"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
